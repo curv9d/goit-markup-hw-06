@@ -204,10 +204,9 @@ button {
     max-width: 100%;
 }
 
-/* .offer-svg-icon {
+.offer-svg-icon {
     align-items: center;
     justify-content: center;
-    display: flex;
     width: 264px;
     height: 112px;
     flex-shrink: 0;
@@ -215,7 +214,8 @@ button {
     border: 1px solid #8E8F99;
     border-radius: 4px;
     margin-bottom: 8px;
-} */
+    display: none;
+}
 
 .offer-section-offers {
     color: #2E2F42;
