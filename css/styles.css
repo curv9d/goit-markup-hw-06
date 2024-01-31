@@ -494,7 +494,7 @@ button {
     color: #4d5ae5;
     display: inline-block;
     margin-bottom: 16px;
-    margin-left: 94px;
+    margin-left: 90px;
 }
 
 .logo-studio-footer {
@@ -964,6 +964,58 @@ button {
         height: 420px;
         flex-direction: unset;
     }
+
+    .container.footer-container {
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    
+    .footer-left-container {
+        margin-right: 120px;
+        flex-direction: none;
+    }
+
+    .logo-footer {
+        margin-left: 0;
+    }
+
+    .footer-text {
+        max-width: 288px;
+        margin: 0;
+    }
+
+    .footer-link-container {
+        flex-direction: none;
+    }
+
+    .footer-another-text {
+        margin-left: 0;
+    }
+
+    .footer-sub-wrap {
+        flex-direction: none;
+    }
+
+    .footer-sub-text {
+        margin-left: 0;
+    }
+
+    .footer-form {
+        display: flex; 
+    }
+
+    .footer-form-input {
+        margin-left: 0;
+        margin-bottom: 0;
+        width: 264px;
+    }
+
+    .footer-form-button {
+        margin-left: 0;
+    }
 }
 
 @media screen and (min-width: 1156px) {
@@ -1050,53 +1102,11 @@ button {
     }
 
     .container.footer-container {
-        display: flex;
-        align-items: baseline;
-        flex-direction: row;
-    }
-    
-    .footer-left-container {
-        margin-right: 120px;
-        flex-direction: none;
-    }
-
-    .logo-footer {
-        margin-left: 0;
-    }
-
-    .footer-text {
-        max-width: 288px;
-        margin: 0;
-    }
-
-    .footer-link-container {
-        flex-direction: none;
-    }
-
-    .footer-another-text {
-        margin-left: 0;
+        flex-wrap: nowrap;
+        margin: 0 auto;
     }
 
     .footer-sub-wrap {
         margin-left: 80px;
-        flex-direction: none;
-    }
-
-    .footer-sub-text {
-        margin-left: 0;
-    }
-
-    .footer-form {
-        display: flex; 
-    }
-
-    .footer-form-input {
-        margin-left: 0;
-        margin-bottom: 0;
-        width: 264px;
-    }
-
-    .footer-form-button {
-        margin-left: 0;
     }
 }
