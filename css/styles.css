@@ -122,8 +122,18 @@ button {
     background-size: cover;
     /* max-width: 1440px; */
     max-width: 100%;
+    height: 432px;
     margin: 0 auto;
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2ddpx),
+    (min-resolution: 192dpi) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
+        }
+    }
 
 .container.hero-container {
     align-items: center;
@@ -133,13 +143,18 @@ button {
     color: #FFFFFF;
     text-align: center;
     font-style: normal;
-    font-size: 56px;
+    /* font-size: 56px; */
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
+    /* line-height: 1.07; */
+    line-height: 1.11;
     letter-spacing: 0.02em;
-    max-width: 496px;
+    /* max-width: 496px; */
+    max-width: 216px;
     margin: 0 auto;
-    padding-bottom: 48px;
+    /* padding-bottom: 48px; */
+    padding-bottom: 72px;
+    text-transform: capitalize;
 }
 
 .hero-button {
@@ -371,6 +386,7 @@ button {
     background-color: #FFFFFF;
     /* width: calc((100% - 48px)/ 3); */
     max-width: 288px;
+    height: 400px;
     flex-direction: column;
     border-radius: 0px 0px 4px 4px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -441,16 +457,20 @@ button {
 
 .footer {
     background-color: #2e2f42;
-    padding: 100px 0;
+    /* padding: 100px 0; */
+    padding: 97px 0;
 }
 
 .container.footer-container {
-    display: flex;
-    align-items: baseline;
+    /* display: flex; */
+    display: block;
+    /* align-items: baseline; */
+    flex-direction: column;
 }
 
 .footer-left-container {
-    margin-right: 120px;
+    /* margin-right: 120px; */
+    flex-direction: column;
 }
 
 .footer-text {
@@ -458,7 +478,10 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px;
+    /* max-width: 264px; */
+    max-width: 288px;
+    margin-left: 16px;
+    margin-bottom: 72px;
 }
 
 .logo-footer {
@@ -471,10 +494,15 @@ button {
     color: #4d5ae5;
     display: inline-block;
     margin-bottom: 16px;
+    margin-left: 94px;
 }
 
 .logo-studio-footer {
     color: #F4F4FD; 
+}
+
+.footer-link-container {
+    flex-direction: column;
 }
 
 .footer-another-text {
@@ -485,6 +513,7 @@ button {
     line-height: 24px;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    margin-left: 98px;
 }
 
 .footer-icons {
@@ -493,6 +522,7 @@ button {
     align-items: center;
     justify-content: center;
     margin-top: 8px;
+    margin-bottom: 72px;
 }
 
 .footer-icon {
@@ -525,7 +555,8 @@ button {
 }
 
 .footer-sub-wrap {
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    flex-direction: column;
 }
 
 .footer-sub-text {
@@ -534,10 +565,11 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    margin-left: 106px;
 }
 
 .footer-form {
-    display: flex;
+    /* display: flex;  */
     gap: 24px;
 }
 
@@ -546,7 +578,8 @@ button {
 }
 
 .footer-form-input {
-    width: 264px;
+    /* width: 264px; */
+    width: 288px;
     height: 40px;
     flex-shrink: 0;
     border-radius: 4px;
@@ -561,7 +594,8 @@ button {
     letter-spacing: 0.04em;
     background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    margin-left: 1px;
+    margin-bottom: 16px;
 }
 
 .footer-form-input::placeholder {
@@ -590,6 +624,7 @@ button {
     letter-spacing: 0.04em;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 53px;
 }
 
 .footer-form-button:hover,
@@ -683,10 +718,6 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
-}
-
-.modal-form {
-
 }
 
 .in-modal-form-wrap {
@@ -894,6 +925,18 @@ button {
         display: none;
     }
 
+    .hero-section {
+        padding: 112px 0;
+        height: 436px;
+    }
+
+    .hero-section-text {
+        font-size: 56px;
+        letter-spacing: 1.07;
+        padding-bottom: 36px;
+        max-width: 496px;
+    }
+
     .offer-list {
         gap: 24px;
         flex-direction: unset;
@@ -918,6 +961,7 @@ button {
     .portfolio-list-element {
         width: calc((100% - 24px)/ 2);
         max-width: 356px;
+        height: 420px;
         flex-direction: unset;
     }
 }
@@ -944,6 +988,11 @@ button {
     .hero-section {
         padding: 188px 0;
         max-width: 1440px;
+        height: 600px;
+    }
+
+    .hero-section-text {
+        padding-bottom: 48px;
     }
 
     .offer-section {
@@ -994,5 +1043,60 @@ button {
         width: calc((100% - 48px)/ 3);
         max-width: 360px;
         flex-direction: unset;
+    }
+
+    .footer {
+        padding: 100px 0;
+    }
+
+    .container.footer-container {
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+    }
+    
+    .footer-left-container {
+        margin-right: 120px;
+        flex-direction: none;
+    }
+
+    .logo-footer {
+        margin-left: 0;
+    }
+
+    .footer-text {
+        max-width: 288px;
+        margin: 0;
+    }
+
+    .footer-link-container {
+        flex-direction: none;
+    }
+
+    .footer-another-text {
+        margin-left: 0;
+    }
+
+    .footer-sub-wrap {
+        margin-left: 80px;
+        flex-direction: none;
+    }
+
+    .footer-sub-text {
+        margin-left: 0;
+    }
+
+    .footer-form {
+        display: flex; 
+    }
+
+    .footer-form-input {
+        margin-left: 0;
+        margin-bottom: 0;
+        width: 264px;
+    }
+
+    .footer-form-button {
+        margin-left: 0;
     }
 }
